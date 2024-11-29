@@ -15,11 +15,17 @@ while True:
     address = input("Input address: ")
     fav_food = input("Input favorite food: ")
 
+    # Store inputs in a Library and put it in a variable
+    info = {"Name": name, "Salary": salary, "Age": age, "Address": address, "Favorite Food": fav_food}
+
+    # Append variable in a list
+    information.append(info)
+
     stop = input("Do you want to stop inputting data? (yes/no): ").strip().lower()
     if stop == "yes":
         break
 
-# Store inputs in a Library and put it in a variable
-# Append variable in a list
+
+
 # Write the list in a file (specifically the Information.txt file)
 
