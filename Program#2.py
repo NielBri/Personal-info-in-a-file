@@ -9,6 +9,10 @@ with open('Writing.txt', 'r') as file_handle:
 
     # Search in the file for a file with the same name use also an if function
     for line in lines:
+
+        # This allows each line to turn back into a library than just a string
+        info = eval(line)
+
         if info['Name'] == ask_user:
             print("Person found!\n")
             print("Name: ", info["Name"])
