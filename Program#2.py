@@ -1,10 +1,10 @@
 # Program 2 ties to get the info on the text file and searches for a match
 
 # Search for user in the file
-ask_user = input("Search for user: ").strip()
+ask_user = input("Search for user: \n").strip()
 
 # Read the lines in the file
-with open('Writing.txt', 'r') as file_handle:
+with open('Information.txt', 'r') as file_handle:
     lines = file_handle.readlines()
 
     # Search in the file for a file with the same name use also an if function
@@ -20,7 +20,7 @@ with open('Writing.txt', 'r') as file_handle:
             print("Salary: ", info["Salary"])
             print("Address: ", info["Address"])
             print("Favorite food: ", info["Favorite Food"])
-
+            break
 
     else:
         print("User not found")
