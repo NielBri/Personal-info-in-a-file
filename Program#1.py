@@ -21,11 +21,15 @@ while True:
     # Append variable in a list
     information.append(info)
 
+    # Write the list in a file (specifically the Information.txt file)
+    with open("Information.txt", "a") as file_handle:
+        file_handle.write(f"{info}\n")
+
     stop = input("Do you want to stop inputting data? (yes/no): ").strip().lower()
     if stop == "yes":
         break
 
 
 
-# Write the list in a file (specifically the Information.txt file)
+
 
