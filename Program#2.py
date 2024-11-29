@@ -22,5 +22,5 @@ with open('Writing.txt', 'r') as file_handle:
             print("Favorite food: ", info["Favorite Food"])
 
 
-        else:
-            print("User not found")
+    else:
+        print("User not found")
